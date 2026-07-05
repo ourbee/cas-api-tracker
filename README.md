@@ -2,7 +2,7 @@
 
 A free, single-page web app that helps college teachers in **West Bengal Government-aided colleges** calculate their **API (Academic Performance Indicator) score** for **CAS promotion** — and assemble a print-ready dossier — without spreadsheets, logins, or installation.
 
-**▶ Use it now: https://ourbee.github.io/cas-tracker/**
+**▶ Use it now: https://ourbee.github.io/cas-api-tracker/**
 
 Built to the rules in **G.O. 1373-Edn(CS) dated 07.12.2017** and the **UGC Regulations 2016 (4th Amendment)**.
 
