@@ -29,7 +29,9 @@ If you keep a day-by-day register workbook (the "Yellow Book"), start here.
 2. Open the **Upload** tab. Under **Option 1 · all categories**, click **Upload the Yellow Book (.xlsx)** and choose the file.
 3. The **review** shows each sheet, the session it goes to, the class length it found, and — in the last column — any place where the sheet's own **TOTAL row** doesn't match its daily values (for example a SUM that starts halfway down the year).
 4. Below, the proposed rows are sorted into **Ready**, **Ask me**, **Couldn't read** and **Skipped**. Check the *Ask me* ones: choose an annexure to include a row, or leave it out. (Optional: *Sort unclear items with AI* uses Gemini with your own key.)
-5. Click **Accept and create … rows**. The **upload report** links every row back to its cell. **Undo this upload** removes them all.
+5. Click **Accept and create … rows**. The **upload report** links every row back to its cell.
+
+**To remove an upload:** Upload tab → **Your uploads** (also on the Annexures page, and on each annexure page under *Uploads with rows in …*) → **Remove upload**. It deletes the rows that upload created (including any edits you made to them) and brings back anything it had set aside. You can upload the file again afterwards.
 
 Uploading the same workbook again later only proposes what is new.
 
@@ -50,7 +52,7 @@ Where you have a fuller or more accurate record for one category — an invigila
    - **The whole category** — every annexure of that category (e.g. all of I(b) Examination duties), when the file is your complete record for it.
 
    Each session is listed with how many Yellow Book rows will be **set aside**. Untick a session to add the file's rows alongside the Yellow Book instead.
-6. **Accept**. Set-aside rows are not counted and not deleted — **Undo this upload** makes them count again. Rows you typed by hand are never set aside.
+6. **Accept**. Set-aside rows are not counted and not deleted — **Remove upload** on this file (Upload tab → *Your uploads*) makes them count again. Rows you typed by hand are never set aside.
 
 **Annexures** tab → **Sources in use** shows, for every annexure and session, whether it is counted from the Yellow Book, an annexure file, typed rows or evidence.
 
@@ -118,7 +120,9 @@ Publications, projects, guidance, awards, and talks or papers presented are scor
 
 ## Troubleshooting
 
-**My Yellow Book rows for an annexure aren't counted.** An individual annexure you uploaded overrides them. See Annexures → *Sources in use*; undo the upload to restore them.
+**My Yellow Book rows for an annexure aren't counted.** An individual annexure you uploaded overrides them. See Annexures → *Sources in use*; to restore them, remove that upload (Upload tab → *Your uploads* → **Remove upload**).
+
+**How do I clear an upload?** Upload tab → *Your uploads* → **Remove upload** next to the file. The same list is on the Annexures page, and each annexure page lists the uploads that touched it.
 
 **A session's score fell after the update.** Look for *Set aside — not counted* on the session page: an old lump-sum entry is no longer added on top of the annexure rows. Count it as well only if it is different work.
 

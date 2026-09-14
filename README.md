@@ -58,7 +58,7 @@ No account, no login, no tracking. Data lives in your browser. It leaves your co
 
 **The numbers differ from my Yellow Book's TOTAL row.** The app counts each day's own value. Open the session — it explains which rows the TOTAL formula leaves out.
 
-**I uploaded an annexure file and my Yellow Book rows disappeared.** They are set aside, not deleted: the file overrides them for that annexure in those sessions. Undo the upload to bring them back, or untick a session when uploading.
+**I uploaded an annexure file and my Yellow Book rows disappeared.** They are set aside, not deleted: the file overrides them for that annexure in those sessions. Remove the upload (Upload tab → *Your uploads* → **Remove upload**) to bring them back, or untick a session when uploading.
 
 ## For development
 
