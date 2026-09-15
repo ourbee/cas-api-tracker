@@ -6,25 +6,27 @@ The app and the Claude project each do what they are good at:
 |---|---|---|
 | Holds | the annexure rows, hour rules, scores, day view | the G.O., JDPI conventions, "My CAS Facts", your raw documents |
 | Good at | exact, repeatable counting and checking | reading messy sources: WhatsApp exports, e-mails, minutes, flyers, screenshots, PDFs |
-| Hands over | **the brief** (Evidence tab → *Download the brief*) | **the evidence ledger** (a table in a fixed format) and **filled annexure templates** |
+| Hands over | **the brief** (Bring in records → Evidence Ledger → *Download the brief*) | **the evidence ledger** (a table in a fixed format) and **filled annexure templates** |
 
 The loop, once the Yellow Book and any annexure files are imported:
 
-1. **App → Claude.** Evidence tab → *Download the brief for the Claude project*. The brief is a Markdown file with your sessions and teaching-mode periods, every row already recorded, where the file is thin (Category I shortfalls, years with little recorded, work recorded in one year but missing or briefer in another, days with unaccounted time on campus, memberships with nothing logged), and the exact ledger format.
+1. **App → Claude.** Bring in records → Evidence Ledger → *Download the brief for the Claude project*. The brief is a Markdown file with your sessions and teaching-mode periods, every row already recorded, where the file is thin (Category I shortfalls, years with little recorded, work recorded in one year but missing or briefer in another, days with unaccounted time on campus, memberships with nothing logged), and the exact ledger format.
 2. **Claude.** Open the CAS Promotion project, start a chat, attach the brief and the raw sources, and send the *Evidence ledger* command below.
-3. **Claude → App.** Evidence tab → choose the ledger file (or paste Claude's table). Every item gets a verdict: *not recorded · recorded, not fully · more than the source shows · on another date? · recorded*. From each item you can add it as an annexure row, use it as a row's evidence, or dismiss it.
+3. **Claude → App.** Bring in records → Evidence Ledger → choose the ledger file (or paste Claude's table). Every item gets a verdict: *not recorded · recorded, not fully · more than the source shows · on another date? · recorded*. From each item you can add it as an annexure row, use it as a row's proof, or dismiss it. Ledger files can come in over many sittings — one folder today, two tomorrow; items already in the ledger are skipped.
 4. Repeat whenever you find more sources. Download a fresh brief each time — it lists what is already in the ledger so Claude doesn't repeat it.
 
-For structured lists (an exam-duty PDF, an evaluation list, an attendance extract), ask Claude to fill an **annexure template** instead (Import page → *Annexure templates*, or *Excel template* on any annexure page) and upload it as an annexure file. It replaces the Yellow Book's rows for that annexure in the sessions it covers.
+For structured lists (an exam-duty PDF, an evaluation list, an attendance extract), ask Claude to fill an **annexure template** instead (Bring in records → Upload files → *Annexure templates*, or *Excel template* on any annexure page) and upload it as an individual annexure. It replaces the Yellow Book's rows for that annexure in the sessions it covers. A list of work that should sit *alongside* the Yellow Book (for example 2023-24 onwards) goes in as a **spreadsheet of work** instead.
 
 ---
 
 ## 1. Update the project instructions
 
+*Updated for v5 (16 September 2026): classification rules 7–9 (headship, college work with default hours, roles). If you pasted the v4 text, replace it with the block below.*
+
 In Claude: **Projects → CAS Promotion → Instructions (edit)**. The section *"Preparing app-ready data from Ritwik's records"* describes the old app (tabs and units: *Session | Tab | Unit | Particulars | Quantity …*). **Delete that whole section, up to "Tone and interaction", and paste the text below in its place.**
 
 ```markdown
-## Preparing data for the CAS Tracker app (v4, September 2026)
+## Preparing data for the CAS Tracker app (v5, September 2026)
 
 The CAS Tracker keeps Ritwik's records as annexure rows (A-1 … H-7) and does all counting, hour rules and scoring itself. Never compute scores for the app. Your job is to turn raw sources into one of two outputs, exactly as specified.
 
@@ -56,6 +58,9 @@ When Ritwik attaches an app template (.xlsx whose sheet is named like "B-3 Invig
 4. YouTube/e-content: C-2/C-3 hours or a III(F) e-learning module — one or the other, flag for IQAC.
 5. Evaluation and marks upload of the same scripts are separate rows (B-4 and B-6) — the app pairs them.
 6. Never inflate. When unsure, mark Confidence low and say what record would confirm it.
+7. Headship: the brief lists the periods Ritwik was Head of Department. A notice or message calling all Heads of Departments to a meeting in such a period is a meeting attended → D-2, Notes "presumed present — HoD (ex officio)", even if no reply or minutes mention him.
+8. College work that rarely has a written time — notices and circulars, Google Forms for data collection, minutes and ATRs, committee / NAAC / SSR reports, student lists and form responses, Kanyashree and OBC applications, Mindspace / e-Volve / Ourselves editing — goes to D-3 (lesson plans and course progression to C-4; Google Forms quizzes to C-3, or B-1 when set for CIA; guiding UG term papers and projects to A-2). Leave Hours blank unless stated: the app applies Ritwik's default hours for each kind.
+9. Roles: the brief lists the cells and committees Ritwik belongs to (Roles held). Work for these bodies is his; name the body in "Body / committee". Intertext Research and the anthology project are not college work — leave them out.
 ```
 
 ## 2. Commands to use in the project
@@ -78,4 +83,4 @@ When Ritwik attaches an app template (.xlsx whose sheet is named like "B-3 Invig
 
 ## 3. In-app alternative: Gemini
 
-For a handful of items at a time (one screenshot, one flyer, a few pasted messages), the Evidence tab can read them with Gemini using your own key and produce the same ledger. Whole WhatsApp exports, a year of e-mail, or long minutes are better done in the Claude project, which reads large files and knows your case facts.
+For a handful of items at a time (one screenshot, one flyer, a few pasted messages), the Evidence Ledger can read them with Gemini using your own key and produce the same ledger. Whole WhatsApp exports, a year of e-mail, or long minutes are better done in the Claude project, which reads large files and knows your case facts.

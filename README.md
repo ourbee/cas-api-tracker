@@ -8,19 +8,26 @@ Built to **G.O. 1373-Edn(CS) dated 07.12.2017** and the **UGC Regulations 2016 (
 
 A screen-by-screen walkthrough is in **[USER-GUIDE.md](USER-GUIDE.md)**.
 
+The tabs: **Home · Bring in records · To check · Annexures · Scores · Print & submit**.
+
 ---
 
 ## What it does
 
-- **Annexures are the record.** Everything you did goes into an annexure — class log, exam duties (question setting, invigilation, evaluation, scrutiny, marks upload, OIC/JOIC work), presentations and videos, meetings, committee and college work, student events, seminars, research, leave, and time on campus. Each row has a date, its details, an evidence reference and a verification status.
-- **Hours from the rules.** Evaluation 0.3/0.5 h per script (UG) and 0.5/0.75 (PG), question setting 5–8 h, moderation 3–4 h, scrutiny 5 min per script, marks upload 30 s per script, meetings 2 h when no time is recorded, presentations 5 h, a full day 8 h — every number editable. Recorded times ("10AM–1PM") win over defaults.
-- **Sessions made for you.** From your date of joining, the app builds the assessment period and its academic sessions (the first and last clipped to the period), sorts every dated row into its session, and scores Category I per session, Category II and III cumulatively, with "floor · short by" readings on every head.
-- **Upload instead of typing.**
-  - **The whole Yellow Book** (your day-by-day register workbook) is read into all annexures at once, with the cell each row came from. The app explains where the sheet's own TOTAL row is wrong (SUM ranges that start late, blank formula cells) and reads class lengths that change mid-year (45-minute classes, then 1-hour online classes).
-  - **An individual annexure** — SP's Word formats, an evaluation list, or the app's own Excel templates — overrides the Yellow Book for that annexure, or its whole category, in the sessions it covers. Nothing is deleted; undo brings the Yellow Book rows back. A table shows which source each annexure is counted from.
+- **Annexures are the record.** Everything you did goes into an annexure — class log, exam duties (question setting, invigilation, evaluation, scrutiny, marks upload, OIC/JOIC work), presentations and videos, meetings, committee and college work, student events, seminars, research, leave, and time on campus. Each row has a date, its details, a proof reference and a verification status.
+- **Hours from the rules.** Evaluation 0.3/0.5 h per script (UG) and 0.5/0.75 (PG), question setting 5–8 h, moderation 3–4 h, scrutiny 5 min per script, marks upload 30 s per script, meetings 2 h when no time is recorded, presentations 5 h, a full day 8 h — every number editable. Recorded times ("10AM–1PM") win over defaults. College work that rarely has a written time — notices, Google Forms, minutes, reports, scholarship applications, magazine editing, lesson plans — gets your own default hours (editable, and shown as a default on the row).
+- **Sessions made for you.** From your date of joining, the app builds the assessment period and its academic sessions (the first and last clipped to the period), sorts every dated row into its session, and scores Category I per session, Category II and III over the whole period, with "floor · short by" readings on every head.
+- **Bring in records — one place for everything.**
+  - **The Yellow Book** (your day-by-day register workbook) is read into all annexures at once, with the cell each row came from. The app explains where the sheet's own TOTAL row is wrong and reads class lengths that change mid-year.
+  - **An individual annexure** — SP's Word formats, an evaluation list, or the app's own Excel templates — replaces the Yellow Book for that annexure, or its whole category, in the sessions it covers.
+  - **A spreadsheet of work done** — a few rows or many, from any year — is sorted into annexures row by row and added alongside the Yellow Book.
+  - **The Evidence Ledger** brings in work found in WhatsApp messages, e-mails, minutes, notices and flyers — prepared by a Claude project from a brief the app writes, or read in the app by Gemini — and checks every item against your rows: recorded · recorded, not fully · more than the source shows · on another date? · not recorded.
+  - Upload as often as you like: each upload adds only what is new, and any upload can be removed. When you choose a different annexure for a piece of text, the app remembers it for later uploads.
+- **To check.** Everything that needs a look is a card in plain words: what was found, which record each figure comes from (linked to the Yellow Book cell once the sheet is linked in Setup), which rule applies, and the likely fixes — type a time, use your usual time for that work, use the day's unexplained time on campus, keep the rule's figure, leave a row out — right on the card. A card marked as checked stays away until its figures change.
+- **Scores.** The whole period — Category I in every session, Category II and III added up, and work that is counted once — and each session's heads, its days against time on campus, and its cards to check.
 - **Days.** Each day's recorded work is set against your time on campus. A meeting with no recorded duration is given the rest of the day; days with unaccounted time, or more work than time on campus, are flagged; online teaching periods (COVID) are exempt.
-- **Evidence.** WhatsApp messages, e-mails, minutes, notices and flyers become an *evidence ledger* — prepared by a Claude project from a brief the app writes, or read in the app by Gemini — and every item is checked against your rows: recorded · recorded, not fully · more than the source shows · on another date? · not recorded. The app also lists work you recorded in one year but not (or more briefly) in another.
-- **Counted once.** Remedial classes, mentoring, and talks that could sit under two heads are counted in one place only; lump sums typed before the annexures existed are set aside when annexure rows cover the same head.
+- **Headship.** While you were Head of Department, a notice calling all Heads of Departments to a meeting counts as a meeting attended (ex officio); the Evidence Ledger, the brief and Gemini all apply it.
+- **Counted once.** Remedial classes, mentoring, and talks that could sit under two heads are counted in one place only. Totals typed before the annexures existed are annexure rows now; one that overlaps annexure rows for the same head is kept but not counted, so nothing is counted twice.
 - **Documents.** Every annexure in the session-grouped format, the Annexure-B proforma, the summary of API scores, or the complete file — printed (Save as PDF) or downloaded as Word.
 
 ## Why you might want it
@@ -32,17 +39,17 @@ A screen-by-screen walkthrough is in **[USER-GUIDE.md](USER-GUIDE.md)**.
 ## Quick start
 
 1. Open **https://ourbee.github.io/cas-api-tracker/** on a laptop or desktop.
-2. **Dashboard** — fill in your profile, the promotion sought and your date of joining. Sessions appear.
-3. **Upload** — upload the Yellow Book (Option 1). Review, then accept.
-4. **Upload** again for any category where you have a better record (Option 2 · individual annexure).
-5. **Dashboard** — confirm the class length for each session.
-6. **Sessions** and **Days** — see where each session stands and which days need a look.
-7. **Evidence** — download the brief, prepare the ledger in Claude, import it, act on the verdicts.
-8. **Download backup**. When ready, print the annexures, proforma and summary.
+2. **Home → Setup → Profile** — fill in your profile, the promotion sought and your date of joining. Sessions appear.
+3. **Bring in records → Upload files** — upload the Yellow Book. Review, then accept.
+4. Upload individual annexures or spreadsheets of work where you have them.
+5. **To check** — work through the cards, starting with *Not counted yet*.
+6. **Bring in records → Evidence Ledger** — download the brief, prepare the ledger in Claude, bring it back, act on the verdicts.
+7. **Scores** — see where each session and the whole period stand.
+8. **Home → Setup → Backup & restore** after each sitting. When ready, **Print & submit**.
 
 ## Backup and restore
 
-Browser data can be lost by clearing browsing data, private windows, or a change of browser or computer. Click **Download backup** on the Dashboard after each sitting and keep the `.json` file safe; **Restore from backup** loads it back.
+Browser data can be lost by clearing browsing data, private windows, or a change of browser or computer. Click **Download backup** (Home → Setup → Backup & restore; Home also reminds you) after each sitting and keep the `.json` file safe; **Restore from backup** loads it back.
 
 ## The scoring rules
 
@@ -56,22 +63,24 @@ No account, no login, no tracking. Data lives in your browser. It leaves your co
 
 **Is this an official tool?** No. It is an independent helper that follows the published rules and the DPI office's conventions.
 
-**The numbers differ from my Yellow Book's TOTAL row.** The app counts each day's own value. Open the session — it explains which rows the TOTAL formula leaves out.
+**The numbers differ from my Yellow Book's TOTAL row.** The app counts each day's own value. Open the session in Scores — it explains which rows the TOTAL formula leaves out.
 
-**I uploaded an annexure file and my Yellow Book rows disappeared.** They are set aside, not deleted: the file overrides them for that annexure in those sessions. Remove the upload (Upload tab → *Your uploads* → **Remove upload**) to bring them back, or untick a session when uploading.
+**I uploaded an annexure file and my Yellow Book rows disappeared.** They are set aside, not deleted: the file overrides them for that annexure in those sessions. Remove the upload (Bring in records → *Your uploads* → **Remove upload**) to bring them back, or untick a session when uploading.
+
+**A total I typed in an earlier version isn't counted.** It is an annexure row now, kept but not counted because annexure rows hold the same head. Its card on To check lets you count it as well or delete it.
 
 ## For development
 
 The deliverable is the single `index.html`. Source lives in the development folder:
 
 - `src/engine.js` — scoring engine, sessions and period, schema and migration (the Stage 1→2 maths must never change; `npm test` checks it against the original app)
-- `src/annex.js` — annexure definitions, hour rules, time-slot parser, class-length changes
-- `src/model.js` — rows → engine entries, precedence (annexure files over the Yellow Book, annexure rows over direct entries), flags
-- `src/importer.js` — Yellow Book, list and annexure-file (.xlsx / .csv / .docx) reading
-- `src/days.js` — the day view; `src/evidence.js` — ledger, verdicts, patterns, the brief
+- `src/annex.js` — annexure definitions, hour rules, head names, time-slot parser, class-length changes, moving a row between annexures
+- `src/model.js` — rows → engine entries, precedence (annexure files over the Yellow Book), flags with ids, retiring direct entries into rows
+- `src/importer.js` — Yellow Book, list, spreadsheet and annexure-file (.xlsx / .csv / .docx) reading, remembered annexure choices
+- `src/days.js` — the day view; `src/evidence.js` — ledger, verdicts, patterns, the brief; `src/checks.js` — usual hours, cell links
 - `src/ai.js` — optional Gemini; `src/docmodel.js`, `src/docx.js` — documents
 - `src/ui/*.jsx` — React pages; `build.js` bundles everything into `index.html`
-- `test/` — regression, annexure, import and day/evidence suites
+- `test/` — regression, annexure, import, day/evidence and v5 suites
 - `docs/CLAUDE-PROJECT.md` — instructions and commands for the Claude "CAS Promotion" project
 
 ```
