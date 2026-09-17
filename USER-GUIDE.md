@@ -15,7 +15,7 @@ The tabs along the top: **Home · Bring in records · To check · Annexures · S
 
 ## Step 1 — Home: who you are and your period
 
-Home starts with **Next steps** — what needs you now — and a **score overview**. Below them is **Setup**, the things you set once.
+Home starts with **Setup** — the things you set once — and below it **Where you stand**: **Next steps**, what needs you now, and the **score overview**.
 
 1. Open **Setup → Profile & assessment period**. Fill in your **name, department, college and designation**.
 2. Choose the **promotion sought** (Stage 1→2, 2→3, 3→4).
@@ -87,6 +87,7 @@ Open **Annexures** and any annexure. Rows are grouped by session; every change s
 - **College work with no written time** (Annexure D-3) gets **your default hours** for its kind of work — a notice 1 h, a Google Form 1.5 h, minutes 1.5 h, a report 3 h, scholarship applications 2 h and so on; a lesson plan (C-4) 1 h. The app works the kind out from the text, or choose it in the row's *Kind of work*. Change the figures in Home → Setup → Hour rules.
 - Each row says where it **counts** — e.g. *counts in I(b) Examination duties* (hover for how that head is scored) — and links to the Yellow Book cell it came from.
 - **Details** holds the **proof** (link or reference), status (pending / attached / verified), *Estimated*, **Don't count this row** (kept for the record, counted nowhere), a note, **Where the work was done** (on campus / off campus / online), and **Belongs in another annexure?** — move the row; its date, hours, proof and source stay, and later uploads send the same text to the new annexure.
+- **The day of the week** is shown with every date — *Wed 18 Aug 2021* in lists and tables, and above each date box as *DATE · WED* — so you can place a record at a glance. The assessment period and the session windows stay plain dates.
 - **Hour rules** are in Home → Setup.
 
 ## Step 7 — Scores
