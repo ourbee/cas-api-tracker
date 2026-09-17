@@ -63,10 +63,16 @@ Every flag is a **card** that says, in plain words:
 - **which rule applies** — e.g. *the JDPI rule for setting a question paper — UG 5 h per paper for up to 50 candidates, 8 h above*;
 - **what it probably means and what you can do**, with the fixes right on the card.
 
+Every card names its source that way, and so does every row on the annexure pages, in Days, in the score lists and in the Evidence Ledger. Where the sheet is linked, the cell reference is a link that opens it; *upload report* opens what that file brought in.
+
 Cards come in three groups:
 
-- **Not counted yet** — hours missing, no date, dated outside the period. Type the time or the hours; use **your usual time** for that work (worked out from your other records, marked *estimated*); use **the day's unexplained time on campus**; or **leave the row out**.
-- **Worth checking** — two figures differ (the sheet's hours against a rule or a written time), a possible duplicate, work on a leave day, a class length to confirm, an earlier total that isn't counted, a day with more work than time on campus, days with time no record explains.
+- **Not counted yet** — hours missing, no date, dated outside the period. Type the time or the hours; use **your usual time** for that work (worked out from your other records, marked *estimated*); use **the day's unaccounted time on campus**; or **leave the row out**. An *Hours missing* card always says how much of that day is still unaccounted — *on campus 11:00–17:00 (6 h), 3.5 h recorded, 2.5 h still unaccounted* — so you can pick a sensible number; if there is no arrival/departure time for that day it says so instead.
+- **Worth checking** — two figures differ (the sheet's hours against a rule or a written time), **two sources differ**, a possible duplicate, work on a leave day, a class length to confirm, an earlier total that isn't counted, a day with more work than time on campus, days with time no record explains.
+
+**Two sources differ** is raised when two uploads describe the same piece of work and do not say the same thing — one carries more detail, they give different hours, or they count a different number of classes. The card quotes each one, names the source with its exact cell, and shows the text as it was written. If both are being counted it warns that the hours are being counted twice. You can **keep the fuller record only**, mark either one *don't count this one*, delete one, or say **they are different work — keep both**. Rows set aside because an annexure file replaced them are compared too, so you can see what the file changed row by row.
+
+**Duplicate?** names every source that carries a copy — whether one upload repeated itself or two different uploads both hold the work — and says how many of the copies are actually being counted.
 - **For your information** — rows replaced by an annexure file, the 75% cut-off, a committee with nothing recorded, an IQAC confirmation.
 
 Fixing a row clears its card. **Mark as checked** (or *Keep 5 h*, *Both are right*, *They're different — keep both*) puts a card away; it comes back by itself if its figures change. **Checked** at the top shows the cards you've put away, each with **Reopen**. Filter by session or by kind of card.
