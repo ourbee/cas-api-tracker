@@ -63,7 +63,9 @@ Every flag is a **card** that says, in plain words:
 - **which rule applies** — e.g. *the JDPI rule for setting a question paper — UG 5 h per paper for up to 50 candidates, 8 h above*;
 - **what it probably means and what you can do**, with the fixes right on the card.
 
-Every card names its source that way, and so does every row on the annexure pages, in Days, in the score lists and in the Evidence Ledger. Where the sheet is linked, the cell reference is a link that opens it; *upload report* opens what that file brought in.
+Every card names its source that way, and so does every row on the annexure pages, in Days, in the score lists and in the Evidence Ledger. **The cell reference is always a link**: with that year's tab address pasted in Setup it opens the exact cell; with any other tab pasted it opens the workbook at that cell and offers *link this tab* to make it exact; with nothing pasted yet it reads *open this cell ↗* and takes you straight to that year's box in Home → Setup → **Yellow Book links**. *Upload report* opens what that file brought in.
+
+To set them up: open your Yellow Book in Google Sheets, click a year's tab, copy the address from the browser bar (it ends in `#gid=…`), and paste it beside that year. One tab is enough to start — every other year then opens the workbook at the right cell — and each tab you paste makes its own year exact.
 
 Cards come in three groups:
 
