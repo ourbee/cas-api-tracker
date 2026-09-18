@@ -34,9 +34,23 @@ If you keep a day-by-day register workbook (the "Yellow Book"), start here.
 2. **Bring in records → Upload files → Option 1** → *Upload the Yellow Book (.xlsx)*.
 3. The review shows each sheet, the session it goes to, the class length it found, and any place where the sheet's own **TOTAL row** doesn't match its daily values.
 4. The proposed rows are sorted into **Ready**, **Ask me**, **Couldn't read** and **Skipped**. Check the *Ask me* ones: choose an annexure to include a row, or leave it out. When you choose a different annexure from the app's guess, it remembers your choice for that text in later uploads. (Optional: *Sort unclear items with AI* uses Gemini with your own key.)
-5. Click **Accept and create … rows**. The **upload report** links every row back to its cell.
+5. A row about to be created on a day that already carries the same work says so under it, so nothing is recorded twice by accident.
+6. Click **Accept and create … rows**. The **upload report** links every row back to its cell, and lists what was set aside.
 
 Uploading the same workbook again later only proposes what is new — so when you fill the Yellow Book for more years, upload it again.
+
+### The Skipped tab — what was set aside, and whether it matters
+
+Cells the app did not make a row of are not a dead list. Every one of them gets its own card, which answers four things:
+
+- **Cell** — what the cell says, in full, and where it is (file, sheet, cell, column).
+- **Set aside** — why: already read in by an earlier upload, a repeat of another cell in the same file, a holiday note, the register's own bookkeeping. Where it was set aside in favour of something, that something is a link — the row it already made, or the cell it repeats.
+- **Already** — the records that carry this work: the row this very cell created before, and anything else that day which reads like the same work, each cited (*the spreadsheet "…" , cell row 4*) and linked.
+- **Adds** — what this file says that those records do not: a remark, a written time, an hours figure, a committee, a paper code, a proof link. Each one comes with a button that puts it on the row that already exists, instead of creating a second row. The row's note then says which file and cell it came from.
+
+The tab leads with the count worth acting on — *2 of these 59 set-aside cells say something your records don't have* — and the cards that add something are shown first. Where the two records give different hours, the card says so in red and calls it a disagreement, not an addition.
+
+After you accept, all of this is kept in the **upload report** under *Set aside*, so you can see weeks later what a file offered and what was done about it.
 
 **To remove an upload:** Bring in records → **Your uploads** → **Remove upload**. It deletes the rows that upload created and brings back anything it had set aside.
 
