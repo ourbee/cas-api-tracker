@@ -6,7 +6,9 @@ The app and the Claude project each do what they are good at:
 |---|---|---|
 | Holds | the annexure rows, hour rules, scores, day view | the G.O., JDPI conventions, "My CAS Facts", your raw documents |
 | Good at | exact, repeatable counting and checking | reading messy sources: WhatsApp exports, e-mails, minutes, flyers, screenshots, PDFs |
-| Hands over | **the brief** (Bring in records → Evidence Ledger → *Download the brief*) | **the evidence ledger** (a table in a fixed format) and **filled annexure templates** |
+| Hands over | **the brief** and **the open questions** (Bring in records → Evidence Ledger, or the top of To check) | **the evidence ledger** (a table in a fixed format) and **filled annexure templates** |
+
+**Where the line falls (v5.3, 17 September 2026).** The app settles everything its own records can settle: an hour rule, the day's unaccounted time on campus, the same work recorded on another date, your usual hours for that kind of work, an item already in the Evidence Ledger, a year typed one out, a row that reads like a different annexure. Each *To check* card shows that reasoning under **Likely** and offers the fix with a ★. What is left over is not a counting problem at all — the answer was never written in the Yellow Book, so only a raw source has it. Those cards become the **questions pack**, and that is the Claude project's half of the work.
 
 The loop, once the Yellow Book and any annexure files are imported:
 
@@ -15,23 +17,36 @@ The loop, once the Yellow Book and any annexure files are imported:
 3. **Claude → App.** Bring in records → Evidence Ledger → choose the ledger file (or paste Claude's table). Every item gets a verdict: *not recorded · recorded, not fully · more than the source shows · on another date? · recorded*. From each item you can add it as an annexure row, use it as a row's proof, or dismiss it. Ledger files can come in over many sittings — one folder today, two tomorrow; items already in the ledger are skipped.
 4. Repeat whenever you find more sources. Download a fresh brief each time — it lists what is already in the ledger so Claude doesn't repeat it.
 
+### The questions pack
+
+**To check → *Questions for the Claude project (.md)*** (also on the Evidence Ledger page) writes out, numbered and grouped by session, every open card the app cannot settle from its own records:
+
+- **times nobody wrote down** — the record, its source, the words as written, and what that day's arrival/departure shows;
+- **records with no date**;
+- **two sources that disagree** — what each says;
+- **memberships with nothing logged** — the body and the years;
+- **days with time on campus that nothing explains** — the dates and how many hours.
+
+Send it with the brief and the raw sources. Answers come back as ordinary evidence-ledger rows with the **question number in the Notes column**, so each one lands on the row it settles when the ledger is read back in. A single card's question can also be copied on its own with *Ask the Claude project*.
+
 For structured lists (an exam-duty PDF, an evaluation list, an attendance extract), ask Claude to fill an **annexure template** instead (Bring in records → Upload files → *Annexure templates*, or *Excel template* on any annexure page) and upload it as an individual annexure. It replaces the Yellow Book's rows for that annexure in the sessions it covers. A list of work that should sit *alongside* the Yellow Book (for example 2023-24 onwards) goes in as a **spreadsheet of work** instead.
 
 ---
 
-## 1. Update the project instructions
+## 1. Set up the project instructions
 
-*Updated for v5 (16 September 2026): classification rules 7–9 (headship, college work with default hours, roles). If you pasted the v4 text, replace it with the block below.*
+**Do this once, and again whenever this file's version changes.** In Claude: **Projects → your CAS project → Instructions → Edit**, select everything in the box, delete it, and paste in the complete instructions. Nothing is spliced, patched or merged — the whole box is replaced each time, so there is never a question of which half is current.
 
-In Claude: **Projects → CAS Promotion → Instructions (edit)**. The section *"Preparing app-ready data from Ritwik's records"* describes the old app (tabs and units: *Session | Tab | Unit | Particulars | Quantity …*). **Delete that whole section, up to "Tone and interaction", and paste the text below in its place.**
+- **If you are the owner of this repo:** the complete text is in `docs/PROJECT-INSTRUCTIONS.md` in your development folder. It carries personal case facts, so it is deliberately not published here. Open it, start at the line marked *⬇ START COPYING HERE*, copy to the end of the file, and paste.
+- **If you are anyone else:** use the block below. It is the app-facing half — how to prepare data the Tracker can read — and you add your own case facts, governing rules and tone around it.
 
 ```markdown
-## Preparing data for the CAS Tracker app (v5, September 2026)
+## Preparing data for the CAS Tracker app (v5.3, September 2026)
 
-The CAS Tracker keeps Ritwik's records as annexure rows (A-1 … H-7) and does all counting, hour rules and scoring itself. Never compute scores for the app. Your job is to turn raw sources into one of two outputs, exactly as specified.
+The CAS Tracker keeps the teacher's records as annexure rows (A-1 … H-7) and does all counting, hour rules and scoring itself. Never compute scores for the app. Your job is to turn raw sources into one of two outputs, exactly as specified.
 
 ### A. Evidence ledger — for scattered sources
-Used for WhatsApp chat exports, screenshots, e-mails (sent and received), minutes, notices/circulars, flyers/posters, photos, certificates, TickTick exports. Ritwik attaches a **brief** generated by the app; read it first. It lists what is already recorded, where the file is thin (look there first), the teaching-mode periods (online / hybrid), and the ledger format.
+Used for WhatsApp chat exports, screenshots, e-mails (sent and received), minutes, notices/circulars, flyers/posters, photos, certificates, TickTick exports. The teacher attaches a **brief** generated by the app; read it first. It lists what is already recorded, where the file is thin (look there first), the teaching-mode periods (online / hybrid), and the ledger format.
 
 Return the ledger as an .xlsx sheet named "Evidence ledger" (or a Markdown table if a file can't be made), one row per activity per date, with exactly these columns in this order:
 Date | Date to | Time from | Time to | Hours (if stated) | Activity | Details | Annexure | Body / committee | Role | Paper / course | Scripts | Source type | Source reference | Quote | Confidence | Outside college hours | Notes
@@ -46,7 +61,9 @@ Date | Date to | Time from | Time to | Hours (if stated) | Activity | Details | 
 - Confidence: high (stated plainly) · medium (strongly implied) · low (inferred).
 - Outside college hours: Yes when plainly done off campus or after hours (e-mail sent at night, online meeting from home).
 
-Rules: the teacher's own work only; one row per activity per date (split a message that reports several duties); keep items even if they look already recorded — the app decides and flags "recorded, not fully" or "more than the source shows"; skip holidays, personal matters, other people's work and circulars that assign Ritwik nothing. Meetings: record the time only if the source states it — for untimed meetings the app gives the meeting the rest of that day's time on campus. After the table, list sources you could not read and any item that needs Ritwik's confirmation.
+Rules: the teacher's own work only; one row per activity per date (split a message that reports several duties); keep items even if they look already recorded — the app decides and flags "recorded, not fully" or "more than the source shows"; skip holidays, personal matters, other people's work and circulars that assign nothing to the teacher.
+
+**The questions pack (v5.3).** The app settles every card it can from the teacher's own records and hands over only what it cannot — times nobody wrote down, missing dates, sources that disagree, memberships with nothing logged, days with unexplained time on campus. When such a pack is attached, answer its numbered questions inside the same ledger table and put the question number in **Notes** (for example "Q41"), so each answer lands on the row it settles. Where no source answers a question, list it as unanswered at the end — never estimate a time to close one. Meetings: record the time only if the source states it — for untimed meetings the app gives the meeting the rest of that day's time on campus. After the table, list sources you could not read and any item that needs Ritwik's confirmation.
 
 ### B. Annexure template — for structured lists
 When Ritwik attaches an app template (.xlsx whose sheet is named like "B-3 Invigilation") with a source such as a duty list or award list, fill the template's own columns only, one row per duty per date, dates as YYYY-MM-DD, leave "Hours" blank wherever the app has a rule (evaluation, scrutiny, question setting, classes). Return the filled .xlsx. The app replaces the Yellow Book's rows for that annexure in the sessions the file covers, so the file must be complete for those sessions.
@@ -68,6 +85,10 @@ When Ritwik attaches an app template (.xlsx whose sheet is named like "B-3 Invig
 **Evidence ledger** (attach the brief + sources):
 
 > Prepare the evidence ledger from the attached sources, following the brief. Look first for what the brief lists under "Where the file is thin". Return the "Evidence ledger" .xlsx, then list anything you couldn't read or that needs my confirmation.
+
+**Answer the open questions** (attach the brief + the questions pack + sources):
+
+> Answer the numbered questions in the attached questions pack from these sources. Return one Evidence ledger row per answer, with the question number in the Notes column and a verbatim quote. Where a source gives no time or date, say so for that number rather than estimating — list those separately at the end.
 
 **Focus on one gap** (attach the brief + sources):
 

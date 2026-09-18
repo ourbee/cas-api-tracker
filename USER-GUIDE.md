@@ -56,12 +56,17 @@ Uploading the same workbook again later only proposes what is new — so when yo
 
 ## Step 4 — To check: work through the cards
 
-Every flag is a **card** that says, in plain words:
+Every flag is a **card**, and every card is laid out the same way, so you always find the same thing in the same place:
 
-- **what was found** — e.g. *Invigilation on Thu 03 Sep 2020 has no hours — not counted yet*;
-- **where each figure comes from** — *your Yellow Book (sheet "2020-2021", cell V70)* — with a link that opens the cell in Google Sheets once you add the sheet links (Home → Setup → **Yellow Book links**);
-- **which rule applies** — e.g. *the JDPI rule for setting a question paper — UG 5 h per paper for up to 50 candidates, 8 h above*;
-- **what it probably means and what you can do**, with the fixes right on the card.
+| | |
+|---|---|
+| **Record** | What is recorded, in full — the description, the particulars, the level, the counts, your own note, the proof reference, and **the source's own words** as they were written. Nothing is trimmed away to keep the card short. |
+| **Source** | Who says so — *your Yellow Book (sheet "2020-2021", cell V70)*, *the spreadsheet "…xlsx" (sheet "Evidence ledger", cell row 381)*, *the Evidence Ledger (WhatsApp, msg 14)*. **Both halves are links**: the name opens that upload's own report (or the ledger item, or the workbook), the cell opens the cell in Google Sheets. |
+| **Issue** | One sentence: what was found, and the rule that says so — e.g. *the JDPI rule for setting a question paper — UG 5 h per paper for up to 50 candidates, 8 h above*. |
+| **Likely** | What it probably is, read from records already in your file: the same work recorded on other dates, how much of that day is unaccounted, the stretch of the day nothing is written in, an Evidence Ledger item on that date, your usual hours for that kind of work, whether the words read like a different annexure. Each line names what it was read from — the app never invents a figure. |
+| **Do** | The fixes, right on the card. A **★** marks the one your own records point to. |
+
+If the answer isn't anywhere in your file — a time nobody ever wrote down — the card offers **Ask the Claude project** instead, which copies a ready-made question to paste beside your raw sources (see Step 6).
 
 Every card names its source that way, and so does every row on the annexure pages, in Days, in the score lists and in the Evidence Ledger. **The cell reference is always a link**: with that year's tab address pasted in Setup it opens the exact cell; with any other tab pasted it opens the workbook at that cell and offers *link this tab* to make it exact; with nothing pasted yet it reads *open this cell ↗* and takes you straight to that year's box in Home → Setup → **Yellow Book links**. *Upload report* opens what that file brought in.
 
@@ -69,7 +74,7 @@ To set them up: open your Yellow Book in Google Sheets, click a year's tab, copy
 
 Cards come in three groups:
 
-- **Not counted yet** — hours missing, no date, dated outside the period. Type the time or the hours; use **your usual time** for that work (worked out from your other records, marked *estimated*); use **the day's unaccounted time on campus**; or **leave the row out**. An *Hours missing* card always says how much of that day is still unaccounted — *on campus 11:00–17:00 (6 h), 3.5 h recorded, 2.5 h still unaccounted* — so you can pick a sensible number; if there is no arrival/departure time for that day it says so instead.
+- **Not counted yet** — hours missing, no date, dated outside the period. Where a rule works the hours out from a number (scripts, papers, classes, pages), the card asks for **that number first** — it is the proper fix, and typed-in hours are only the fallback. Otherwise: use the hours **the same work took on another date**, **your usual time** for that work, or **the day's unaccounted time on campus** (all marked *estimated*); type a time or the hours yourself; or **leave the row out**. An *Hours missing* card always says how much of that day is still unaccounted — *on campus 11:00–17:00 (6 h), 3.5 h recorded, 2.5 h still unaccounted* — and, when the day's other rows carry times, which stretch of it has nothing written in; if there is no arrival/departure time for that day it says so instead. A date typed one year out is offered as a correction. Words that read like a different annexure get a **move it** button.
 - **Worth checking** — two figures differ (the sheet's hours against a rule or a written time), **two sources differ**, a possible duplicate, work on a leave day, a class length to confirm, an earlier total that isn't counted, a day with more work than time on campus, days with time no record explains.
 
 **Two sources differ** is raised when two uploads describe the same piece of work and do not say the same thing — one carries more detail, they give different hours, or they count a different number of classes. The card quotes each one, names the source with its exact cell, and shows the text as it was written. If both are being counted it warns that the hours are being counted twice. You can **keep the fuller record only**, mark either one *don't count this one*, delete one, or say **they are different work — keep both**. Rows set aside because an annexure file replaced them are compared too, so you can see what the file changed row by row.
@@ -119,9 +124,10 @@ Much of your work is recorded only in WhatsApp groups, e-mails, minutes and noti
 
 1. Bring the Yellow Book and any annexure files in first.
 2. **Download the brief for the Claude project.** It lists what is recorded, where the file is thin (shortfalls, years with little recorded, work recorded one year but missing another, days with unaccounted time) and the exact **evidence ledger** format.
-3. In Claude, open your CAS Promotion project, attach the brief and your sources, and ask: *"Prepare the evidence ledger from these sources, following the brief."* (Set-up text for the project: `docs/CLAUDE-PROJECT.md` in the development folder.)
-4. Back in the app, **Choose the ledger file** (or paste Claude's table) → **Add … and check them**. Bring in more ledger files whenever you like — items already in the ledger are skipped.
-5. Each item gets a verdict — **Not recorded** (add it as a row), **Recorded, not fully**, **More than the source shows**, **On another date?**, **Recorded** (use it as the row's proof). **Dismiss** anything irrelevant. A notice calling all HoDs to a meeting while you were head is marked **HoD then — presumed present**; adding it records the meeting with that note.
+3. **Download the open questions.** This is the other half of the brief. The app first settles every card it can from your own records — a rule, the day's unaccounted time, the same work on another date, your usual hours, the ledger. What is left is where the answer was **never written down**, and only a raw source has it: times nobody recorded, missing dates, two sources that disagree, committees whose meetings were never logged, days with unexplained time on campus. They come out numbered, each with the record, its source and exactly what is needed. (The same button sits at the top of **To check**, and a single card's question can be copied with **Ask the Claude project**.)
+4. In Claude, open your CAS Promotion project, attach the brief, the questions and your sources, and ask: *"Prepare the evidence ledger from these sources, following the brief, and answer the numbered questions."* (Set-up text for the project: `docs/CLAUDE-PROJECT.md` in the development folder.)
+5. Back in the app, **Choose the ledger file** (or paste Claude's table) → **Add … and check them**. Bring in more ledger files whenever you like — items already in the ledger are skipped.
+6. Each item gets a verdict — **Not recorded** (add it as a row), **Recorded, not fully**, **More than the source shows**, **On another date?**, **Recorded** (use it as the row's proof). **Dismiss** anything irrelevant. A notice calling all HoDs to a meeting while you were head is marked **HoD then — presumed present**; adding it records the meeting with that note.
 
 For a few items at a time, **Read a few messages, screenshots or flyers with Gemini** does the extraction inside the app with your own key.
 
