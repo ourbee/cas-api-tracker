@@ -50,7 +50,19 @@ Cells the app did not make a row of are not a dead list. Every one of them gets 
 
 The tab leads with the count worth acting on — *2 of these 59 set-aside cells say something your records don't have* — and the cards that add something are shown first. Where the two records give different hours, the card says so in red and calls it a disagreement, not an addition.
 
-After you accept, all of this is kept in the **upload report** under *Set aside*, so you can see weeks later what a file offered and what was done about it.
+### The cards stay — Your uploads → the upload
+
+Pressing **Accept** no longer throws the cards away. Every cell an upload did not turn into a row — the ones set aside, the ones the app wasn't sure about, the ones you left unticked — is kept with the upload itself and survives an accept, a browser refresh and a restore from backup.
+
+**Bring in records → Your uploads** now says how many cells are still undecided, and each upload has an **Open — N to decide** button. Inside, the same cards are grouped as *Set aside · Not sure · Couldn't read · Left out*, with a **To decide** and a **Decided** view. Each card ends with:
+
+- **Bring it in now** — creates the row there and then, as part of that same upload, so it carries the same provenance and removing the upload still takes it away. Where your file already records that work, the button says *Bring it in as a second row* and asks you to confirm, because the hours would count twice.
+- **Leave it out** — puts the card away under *Decided*. Nothing is deleted, and **Reopen** brings it back.
+- **Leave out all N shown** — for a long tail of holiday notes and register bookkeeping you never want to see again.
+
+A card is never silently closed: it sits there until you decide, and it re-reads itself each time you open it, so if you have since added those words to the row by hand it will say *Nothing new* and you can leave it out with confidence.
+
+Uploads made before this existed keep working — their *not imported* cells still appear as cards. To get the full set of cards for an old upload, upload the file again: everything already imported is set aside, and each card says whether the file adds anything to what you have.
 
 **To remove an upload:** Bring in records → **Your uploads** → **Remove upload**. It deletes the rows that upload created and brings back anything it had set aside.
 
