@@ -108,6 +108,16 @@ When Ritwik attaches an app template (.xlsx whose sheet is named like "B-3 Invig
 
 > Read the brief as the Screening-cum-Evaluation Committee would. Which recorded items look weakest on evidence, and which "thin" areas would a scrutineer question first?
 
+## 2b. Calendar records — what the *college* did (v5.8)
+
+A source that says what the college did rather than what the teacher did — a holiday list, an academic calendar, a closure notice, an order moving classes online, an examination programme, a routine change — goes in a **separate .xlsx** with one sheet named `Calendar records`:
+
+`Date | Date to | Kind | Classes affected | Details | Source reference | Quote | Confidence`
+
+**Kind** must be one of nine, letter for letter: *Holiday · College closed · Classes suspended · Online teaching · Exam period · Routine changed · Session start · Session end · Other*. Dates are YYYY-MM-DD; use *Date to* only where the source states an end — where a closure notice gives none, leave it blank and say so in Details rather than inventing one.
+
+These come in under Bring in records → Evidence Ledger → *Calendar records* and become Annexure **H-2** records. **They carry no points.** Their use is the clash: the Tracker then cards every class, duty or meeting recorded on a day the college was *closed* or classes were *suspended*, showing both records and their sources, so the teacher can answer it before a scrutineer asks. Nothing of the teacher's is changed or deleted. A *Holiday* is deliberately not a closure.
+
 ## 3. A handful of items: the hand-over
 
 The app reads nothing itself and calls no outside service (the in-app Gemini reader was removed in v5.7). For a handful of items at a time — one screenshot, one flyer, a few pasted messages — the Evidence Ledger offers **Hand a few messages, screenshots or flyers over for reading**: attach them or paste the text, and it downloads them together with a short note saying who the teacher is, which record they belong to, and the exact ledger format to send back. Whole WhatsApp exports, a year of e-mail, or long minutes go to the Claude project with the brief, which reads large files and knows the case facts.

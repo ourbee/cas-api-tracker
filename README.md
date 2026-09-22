@@ -30,7 +30,8 @@ The tabs: **Home · Bring in records · To check · Annexures · Scores · Print
 - **Who says what.** Every card, row, day and score list cites its source in full — *your Yellow Book (sheet “2019-2020”, cell O93)*, *the annexure file “B-3.xlsx” (cell A5)*, *the Evidence Ledger (WhatsApp, msg 14)* — with the cell always as a link (the exact cell once that year's tab address is in Setup, the workbook otherwise) and a way back to the upload report. When two uploads describe the same work and disagree, or one says more than the other, the card quotes each source side by side and offers a way to settle it; an *Hours missing* card always says how much of that day is still unaccounted.
 - **Scores.** The whole period — Category I in every session, Category II and III added up, and work that is counted once — and each session's heads, its days against time on campus, and its cards to check.
 - **Days.** Each day's recorded work is set against your time on campus. A meeting with no recorded duration is given the rest of the day; days with unaccounted time, or more work than time on campus, are flagged; online teaching periods (COVID) are exempt.
-- **Headship.** While you were Head of Department, a notice calling all Heads of Departments to a meeting counts as a meeting attended (ex officio); the Evidence Ledger and the brief both apply it.
+- **Headship.** While you were Head of Department, a notice calling all Heads of Departments to a meeting counts as a meeting attended (ex officio); the Evidence Ledger and the brief both apply it. The dates are yours to set — nothing is assumed.
+- **The college's own calendar.** Holidays, closures, suspended classes, online-teaching spells, exam windows, session starts and ends and routine changes come in as their own file — a sheet named *Calendar records* — and become Annexure H-2 records carrying no points. What they earn you is a warning: every class, duty or meeting you have recorded on a day the college was closed or classes were suspended gets a card showing **both** records and their sources, so you can answer it before a scrutineer asks. Nothing of yours is changed or deleted, and a holiday is deliberately not treated as a closure.
 - **Counted once.** Remedial classes, mentoring, and talks that could sit under two heads are counted in one place only. Totals typed before the annexures existed are annexure rows now; one that overlaps annexure rows for the same head is kept but not counted, so nothing is counted twice.
 - **Documents.** Every annexure in the session-grouped format, the Annexure-B proforma, the summary of API scores, or the complete file — printed (Save as PDF) or downloaded as Word.
 
@@ -81,7 +82,7 @@ The deliverable is the single `index.html`. Source lives in the development fold
 - `src/annex.js` — annexure definitions, hour rules, head names, time-slot parser, class-length changes, moving a row between annexures
 - `src/model.js` — rows → engine entries, precedence (annexure files over the Yellow Book), flags with ids, retiring direct entries into rows
 - `src/importer.js` — Yellow Book, list, spreadsheet and annexure-file (.xlsx / .csv / .docx) reading, remembered annexure choices
-- `src/days.js` — the day view; `src/evidence.js` — ledger, verdicts, patterns, the brief; `src/checks.js` — usual hours, cell links
+- `src/days.js` — the day view; `src/evidence.js` — ledger, verdicts, calendar records, patterns, the brief; `src/checks.js` — usual hours, cell links
 - `src/docmodel.js`, `src/docx.js` — documents
 - `src/ui/*.jsx` — React pages; `build.js` bundles everything into `index.html`
 - `test/` — regression, annexure, import, day/evidence and v5 suites

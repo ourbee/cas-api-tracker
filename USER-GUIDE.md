@@ -161,6 +161,12 @@ Nothing is ever added to an existing row across a date that doesn't match. Where
 
 If a ledger names the **Kind of work** for college work that carries no written time — minutes, a notice drafted, a Google Form, scholarship applications, magazine editing — that goes straight onto the row and decides which of your default hours applies (Home → Setup → Hour rules). Where the column is blank the app works the kind out from the item's **Activity and Details only**: a quoted message, a note or a source reference never decides it.
 
+### The college's own calendar
+
+Holidays, closures, suspended classes, online-teaching spells, exam windows, session starts and ends and routine changes go in separately, under **Calendar records** on the same tab. It wants an `.xlsx` with one sheet named **Calendar records** and the columns *Date · Date to · Kind · Classes affected · Details · Source reference · Quote · Confidence*; **Calendar template (.xlsx)** beside the button gives you the shape. **Kind** must be one of nine: Holiday · College closed · Classes suspended · Online teaching · Exam period · Routine changed · Session start · Session end · Other. Anything else is shown to you and left out rather than guessed at, and so is a row with no date.
+
+Each record becomes an **Annexure H-2** row and **scores nothing**. What it does is this: wherever you have recorded a class, duty or meeting on a day the college was *closed* or classes were *suspended*, **To check** raises a card showing **both** records with their sources side by side. It offers no button that changes anything — only *Both are right — I can explain it*, and links to open either record yourself. A **Holiday** deliberately raises nothing: evaluation, question setting and meetings on holidays are ordinary.
+
 For a few items at a time, **Hand a few messages, screenshots or flyers over for reading** downloads them together with a short note — who you are, which record they belong to, and the exact ledger format to send back — so the whole set can be handed to whoever reads them. The app itself reads nothing and sends nothing anywhere.
 
 ## Step 10 — Print & submit
