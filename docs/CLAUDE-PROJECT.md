@@ -108,6 +108,6 @@ When Ritwik attaches an app template (.xlsx whose sheet is named like "B-3 Invig
 
 > Read the brief as the Screening-cum-Evaluation Committee would. Which recorded items look weakest on evidence, and which "thin" areas would a scrutineer question first?
 
-## 3. In-app alternative: Gemini
+## 3. A handful of items: the hand-over
 
-For a handful of items at a time (one screenshot, one flyer, a few pasted messages), the Evidence Ledger can read them with Gemini using your own key and produce the same ledger. Whole WhatsApp exports, a year of e-mail, or long minutes are better done in the Claude project, which reads large files and knows your case facts.
+The app reads nothing itself and calls no outside service (the in-app Gemini reader was removed in v5.7). For a handful of items at a time — one screenshot, one flyer, a few pasted messages — the Evidence Ledger offers **Hand a few messages, screenshots or flyers over for reading**: attach them or paste the text, and it downloads them together with a short note saying who the teacher is, which record they belong to, and the exact ledger format to send back. Whole WhatsApp exports, a year of e-mail, or long minutes go to the Claude project with the brief, which reads large files and knows the case facts.

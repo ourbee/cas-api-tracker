@@ -21,7 +21,7 @@ The tabs: **Home · Bring in records · To check · Annexures · Scores · Print
   - **The Yellow Book** (your day-by-day register workbook) is read into all annexures at once, with the cell each row came from. The app explains where the sheet's own TOTAL row is wrong and reads class lengths that change mid-year.
   - **An individual annexure** — SP's Word formats, an evaluation list, or the app's own Excel templates — replaces the Yellow Book for that annexure, or its whole category, in the sessions it covers.
   - **A spreadsheet of work done** — a few rows or many, from any year — is sorted into annexures row by row and added alongside the Yellow Book.
-  - **The Evidence Ledger** brings in work found in WhatsApp messages, e-mails, minutes, notices and flyers — prepared by a Claude project from a brief the app writes, or read in the app by Gemini — and checks every item against your rows: recorded · recorded, not fully · more than the source shows · on another date? · not recorded. Two accounts of one duty in the same pack — the notice and the chat message — are shown together as one **Duplicate?** card before anything is imported, so the hours are never counted twice; work dated outside the assessment period is filed behind a single line with a count rather than a card each. A ledger may name the **Kind of work** for college work that carries no written time, and that decides which of your default hours applies — read from the Activity and Details, never from a quoted message.
+  - **The Evidence Ledger** brings in work found in WhatsApp messages, e-mails, minutes, notices and flyers — prepared by a Claude project from a brief the app writes, or by whoever reads your raw sources, from a hand-over the app writes — and checks every item against your rows: recorded · recorded, not fully · more than the source shows · on another date? · not recorded. Two accounts of one duty in the same pack — the notice and the chat message — are shown together as one **Duplicate?** card before anything is imported, so the hours are never counted twice; work dated outside the assessment period is filed behind a single line with a count rather than a card each. A ledger may name the **Kind of work** for college work that carries no written time, and that decides which of your default hours applies — read from the Activity and Details, never from a quoted message.
   - Upload as often as you like: each upload adds only what is new, and any upload can be removed. When you choose a different annexure for a piece of text, the app remembers it for later uploads.
 - **An entry is what it says, not where it sat.** Every imported cell and ledger item is recognised by its own content — the date, what it is called, its words, the annexure the source states, the source it came from — so two files whose sheets happen to share a name never collide, a re-ordered or enriched file still finds the records it belongs to, and the file and cell are kept purely as the way back to where it was found. An evidence ledger can carry a **Ledger ID** of its own, and then that is the identity: a corrected version of a row lands on the same item instead of arriving as a second one. Nothing is ever merged into a row across a date that doesn't match — that card says **On another date?** and waits for you to settle which date is right.
 - **The review's cards don't disappear.** Every cell an upload did not turn into a row is kept with that upload, so the cards survive pressing *Accept*, a browser refresh and a restore from backup. **Your uploads** says how many cells are still undecided; opening an upload brings the same cards back, grouped as *Set aside · Not sure · Couldn't read · Left out*, each with **Bring it in now** (creates the row as part of that upload — or *as a second row*, with a warning, where the work is already recorded) and **Leave it out** (put away under *Decided*, reopenable). Nothing closes itself; a card waits until you decide.
@@ -30,14 +30,14 @@ The tabs: **Home · Bring in records · To check · Annexures · Scores · Print
 - **Who says what.** Every card, row, day and score list cites its source in full — *your Yellow Book (sheet “2019-2020”, cell O93)*, *the annexure file “B-3.xlsx” (cell A5)*, *the Evidence Ledger (WhatsApp, msg 14)* — with the cell always as a link (the exact cell once that year's tab address is in Setup, the workbook otherwise) and a way back to the upload report. When two uploads describe the same work and disagree, or one says more than the other, the card quotes each source side by side and offers a way to settle it; an *Hours missing* card always says how much of that day is still unaccounted.
 - **Scores.** The whole period — Category I in every session, Category II and III added up, and work that is counted once — and each session's heads, its days against time on campus, and its cards to check.
 - **Days.** Each day's recorded work is set against your time on campus. A meeting with no recorded duration is given the rest of the day; days with unaccounted time, or more work than time on campus, are flagged; online teaching periods (COVID) are exempt.
-- **Headship.** While you were Head of Department, a notice calling all Heads of Departments to a meeting counts as a meeting attended (ex officio); the Evidence Ledger, the brief and Gemini all apply it.
+- **Headship.** While you were Head of Department, a notice calling all Heads of Departments to a meeting counts as a meeting attended (ex officio); the Evidence Ledger and the brief both apply it.
 - **Counted once.** Remedial classes, mentoring, and talks that could sit under two heads are counted in one place only. Totals typed before the annexures existed are annexure rows now; one that overlaps annexure rows for the same head is kept but not counted, so nothing is counted twice.
 - **Documents.** Every annexure in the session-grouped format, the Annexure-B proforma, the summary of API scores, or the complete file — printed (Save as PDF) or downloaded as Word.
 
 ## Why you might want it
 
 - **Nothing to install.** Runs in any current browser. You can also save `index.html` and open it offline.
-- **Your data stays with you.** Everything is stored in your own browser. Files you upload are read on your computer and never sent anywhere. The only optional exception is Gemini, which you switch on with your own key.
+- **Your data stays with you.** Everything is stored in your own browser. Files you upload are read on your computer and never sent anywhere. Since v5.7 there is no exception: the app makes no network calls of any kind.
 - **Backup and restore.** Download one small backup file after each sitting; restore it on any computer. Backups from every earlier version still import.
 
 ## Quick start
@@ -61,7 +61,7 @@ For **Stage 1→2** the maths is fixed: direct teaching hours ÷ 7.5 (cap 70); e
 
 ## Privacy
 
-No account, no login, no tracking. Data lives in your browser. It leaves your computer only if you share a backup, print or download documents, or use the optional Gemini features with your own key.
+No account, no login, no tracking, no AI. Data lives in your browser, and the app calls no outside service. It leaves your computer only if you share a backup, or print or download documents yourself.
 
 ## Frequently asked
 
@@ -82,7 +82,7 @@ The deliverable is the single `index.html`. Source lives in the development fold
 - `src/model.js` — rows → engine entries, precedence (annexure files over the Yellow Book), flags with ids, retiring direct entries into rows
 - `src/importer.js` — Yellow Book, list, spreadsheet and annexure-file (.xlsx / .csv / .docx) reading, remembered annexure choices
 - `src/days.js` — the day view; `src/evidence.js` — ledger, verdicts, patterns, the brief; `src/checks.js` — usual hours, cell links
-- `src/ai.js` — optional Gemini; `src/docmodel.js`, `src/docx.js` — documents
+- `src/docmodel.js`, `src/docx.js` — documents
 - `src/ui/*.jsx` — React pages; `build.js` bundles everything into `index.html`
 - `test/` — regression, annexure, import, day/evidence and v5 suites
 - `docs/CLAUDE-PROJECT.md` — instructions and commands for the Claude "CAS Promotion" project

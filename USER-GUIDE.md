@@ -33,7 +33,7 @@ If you keep a day-by-day register workbook (the "Yellow Book"), start here.
 1. In Google Sheets: **File → Download → Microsoft Excel (.xlsx)**.
 2. **Bring in records → Upload files → Option 1** → *Upload the Yellow Book (.xlsx)*.
 3. The review shows each sheet, the session it goes to, the class length it found, and any place where the sheet's own **TOTAL row** doesn't match its daily values.
-4. The proposed rows are sorted into **Ready**, **Ask me**, **Couldn't read** and **Skipped**. Check the *Ask me* ones: choose an annexure to include a row, or leave it out. When you choose a different annexure from the app's guess, it remembers your choice for that text in later uploads. (Optional: *Sort unclear items with AI* uses Gemini with your own key.)
+4. The proposed rows are sorted into **Ready**, **Ask me**, **Couldn't read** and **Skipped**. Check the *Ask me* ones: choose an annexure to include a row, or leave it out. When you choose a different annexure from the app's guess, it remembers your choice for that text in later uploads.
 5. A row about to be created on a day that already carries the same work says so under it, so nothing is recorded twice by accident.
 6. Click **Accept and create … rows**. The **upload report** links every row back to its cell, and lists what was set aside.
 
@@ -161,7 +161,7 @@ Nothing is ever added to an existing row across a date that doesn't match. Where
 
 If a ledger names the **Kind of work** for college work that carries no written time — minutes, a notice drafted, a Google Form, scholarship applications, magazine editing — that goes straight onto the row and decides which of your default hours applies (Home → Setup → Hour rules). Where the column is blank the app works the kind out from the item's **Activity and Details only**: a quoted message, a note or a source reference never decides it.
 
-For a few items at a time, **Read a few messages, screenshots or flyers with Gemini** does the extraction inside the app with your own key.
+For a few items at a time, **Hand a few messages, screenshots or flyers over for reading** downloads them together with a short note — who you are, which record they belong to, and the exact ledger format to send back — so the whole set can be handed to whoever reads them. The app itself reads nothing and sends nothing anywhere.
 
 ## Step 10 — Print & submit
 
